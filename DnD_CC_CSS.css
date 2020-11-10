@@ -1,0 +1,159 @@
+html {
+  height: 100%;
+  color: tan;
+  font-family: Avenir, sans-serif;
+}
+
+body {
+  background-image: url("DnD_CC_Background.jpg");
+  background-size: 3400px;
+  background-repeat: no-repeat;
+  background-position-x: -500px;
+  background-attachment: fixed;
+}
+
+h1 {
+  text-align: center;
+  background-color: rgb(64, 109, 109, 0.5);
+  border: 1px solid none;
+  border-radius: 30px;
+}
+
+h3 {
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: rgba(94, 119, 119, 0.65);
+  margin: 3px 0 10px 0;
+  width: 150px;
+  text-align: center;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: 100px 500px;
+  grid-template-rows: 150px 200px 150px;
+  text-align: center;
+  justify-content: center;
+}
+
+/*Race, Subrace, Class, and Background*/
+.child1 {
+  border: 1px solid none;
+  border-radius: 20px;
+  background-color: rgba(211, 210, 210, 0.25);
+  margin: 5px;
+  padding: 15px 5px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+/*Displays final character profile*/
+.child2 {
+  grid-row-start: 5;
+  grid-row-end: 7;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  border: 1px solid none;
+
+  border-radius: 0 0 20px 20px;
+  background-color: rgba(211, 210, 210, 0.25);
+  margin: 0 5px 0 5px;
+  padding: 34px 5px;
+}
+
+/*Character Name input*/
+.child3 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  border: 1px solid none;
+
+  border-radius: 20px;
+  background-color: rgba(211, 210, 210, 0.25);
+  margin: 5px;
+  padding: 59px 5px;
+}
+
+/*Buttons above character profile that generate the profile and then add applicable modifiers*/
+.child4 {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  border: 1px solid none;
+
+  border-radius: 20px 20px 0 0;
+  background-color: rgba(211, 210, 210, 0.25);
+  margin: 5px 5px 0 5px;
+  padding: 39px 5px;
+}
+
+/* For use once the div is ready
+.child5 {
+    border: 1px solid black;
+    border-style: dashed;
+    border-radius: 20px;
+    background-color: rgba(211, 210, 210, 0.25);
+    margin: 5px;
+    padding: 54px 5px;
+}*/
+
+/*Dice roll div*/
+.child6 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  border: 1px solid black;
+
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 5px 5px 5px 5px;
+  padding: 40px 5px;
+}
+
+.child7,
+.child8,
+.child9 {
+  border: 1px solid black;
+  border-style: dashed;
+  border-radius: 20px;
+  background-color: rgba(211, 210, 210, 0.25);
+  margin: 5px;
+  padding: 54px 5px;
+}
+
+.ability {
+  display: inline;
+  margin: 10px 2px 10px 30px;
+  padding: 0;
+}
+
+.abilityBox {
+  width: 40px;
+  border: 1px solid none;
+  border-radius: 5px;
+  padding: 2px 0 0 0;
+  margin: 0 15px 0 0;
+}
+
+.abilityScores {
+  text-align: left;
+  padding: 20px;
+}
+
+.name {
+  width: 200px;
+  border: 1px solid none;
+  border-radius: 8px;
+  padding: 2px 0 0 0;
+  margin: 0 15px 0 0;
+}
+
+.select {
+  border-radius: 10px;
+  margin: 5px 0 0 0;
+}
