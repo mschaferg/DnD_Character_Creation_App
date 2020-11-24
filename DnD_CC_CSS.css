@@ -17,6 +17,8 @@ h1 {
   background-color: rgb(64, 109, 109, 0.5);
   border: 1px solid none;
   border-radius: 30px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.19),
+    10px 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 h3 {
@@ -26,14 +28,19 @@ h3 {
   margin: 3px 0 10px 0;
   width: 150px;
   text-align: center;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.19),
+    10px 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .parent {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*display: grid;
   grid-template-columns: 100px 500px;
   grid-template-rows: 150px 200px 150px;
   text-align: center;
-  justify-content: center;
+  justify-content: center;*/
 }
 
 /*Race, Subrace, Class, and Background*/
@@ -43,52 +50,31 @@ h3 {
   background-color: rgba(211, 210, 210, 0.25);
   margin: 5px;
   padding: 15px 5px;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 4;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.19),
+    10px 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 /*Displays final character profile*/
 .child2 {
-  grid-row-start: 5;
-  grid-row-end: 7;
-  grid-column-start: 2;
-  grid-column-end: 3;
   border: 1px solid none;
-
-  border-radius: 0 0 20px 20px;
+  border-radius: 20px;
   background-color: rgba(211, 210, 210, 0.25);
-  margin: 0 5px 0 5px;
+  margin: 5px;
   padding: 34px 5px;
+  text-align: center;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.19),
+    10px 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 /*Character Name input*/
 .child3 {
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 2;
-  grid-column-end: 3;
   border: 1px solid none;
-
   border-radius: 20px;
   background-color: rgba(211, 210, 210, 0.25);
   margin: 5px;
   padding: 59px 5px;
-}
-
-/*Buttons above character profile that generate the profile and then add applicable modifiers*/
-.child4 {
-  grid-row-start: 4;
-  grid-row-end: 5;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  border: 1px solid none;
-
-  border-radius: 20px 20px 0 0;
-  background-color: rgba(211, 210, 210, 0.25);
-  margin: 5px 5px 0 5px;
-  padding: 39px 5px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.19),
+    10px 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 /* For use once the div is ready
@@ -103,16 +89,14 @@ h3 {
 
 /*Dice roll div*/
 .child6 {
-  grid-row-start: 1;
-  grid-row-end: 3;
-  grid-column-start: 1;
-  grid-column-end: 2;
   border: 1px solid black;
-
   border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.5);
-  margin: 5px 5px 5px 5px;
-  padding: 40px 5px;
+  margin: 5px;
+  padding: 10px 5px;
+  text-align: center;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.19),
+    10px 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .child7,

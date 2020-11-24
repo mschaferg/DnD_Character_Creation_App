@@ -19,6 +19,8 @@
         border-radius: 20px;
         text-align: center;
         font-size: 20px;
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.19),
+          10px 6px 6px rgba(0, 0, 0, 0.23);
       "
     >
       Welcome to Primordial Ooze, a D&D 5e character creation page. This page is
@@ -109,16 +111,14 @@
         </select>
       </div>
 
-      <!--Buttons to generate ability scores and then add racial and subracial modifiers-->
-      <div class="child4">
+      <!--Buttons to generate ability scores and then add racial and subracial modifiers. 
+        Displays character profile and ability scores.-->
+      <div class="child2">
         <button class="select" onclick="generateProfile()">Generate!</button>
         <button class="select" onclick="addRaceModifier()">
           Add Modifiers!
         </button>
-      </div>
-
-      <!--Displays character profile and ability scores.-->
-      <div class="child2">
+        <br />
         <p style="display: inline">Name:</p>
         <p
           style="font-size: 30px; color: #eeeeee; display: inline"
